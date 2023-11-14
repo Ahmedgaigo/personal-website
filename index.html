@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/7b5d78c710.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img id="logo" src="./images/logo.jpg">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack and AI/ML Engineer</p>
+                <h1>Hi, I'm <span>Ahmed</span><br>Mustapha from Ghana.    </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------About------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png" alt="my Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As someone with a deep interest in aerospace and AI, I am constantly seeking new ways to explore the intersection
+                        of these fields. I am passionate about discovering the potential applications of these technologies, and I'm 
+                        excited to see how they can be used to push the boundaries of what's possible in aviation and space exploration. With a strong background in science and technology, I am always seeking to expand my knowledge and stay up-to-date on the latest developments in these areas. I believe that AI has the potential to revolutionize the aerospace industry, and I am eager to explore how these technologies can be used to optimize systems and improve performance.
+                        Ultimately, my goal is to make a meaningful impact in the world of aerospace and AI. I am constantly searching
+                        for new opportunities to learn and grow in these fields, and I am excited to see where this journey takes me.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web development - Html, CSS, Javascript</span><br>Web app development</li>
+                                <li><span>MongoDB</span><br>Database Management</li>
+                                <li><span>Python</span><br>Programming language</li>
+                                <li><span>Java</span><br>Programming Language</li>
+                                <li><span>Flask</span><br>Web dev framework</li>
+                                <li><span>Git</span><br>Source code management</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Jun 2023 - Aug 2023</span><br>Quantitative Research Intern - Social Media Analysis and Natural Language Processing</li>
+                                <li><span>Feb 2023 - Present</span><br>Campus Dining Student Manager</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Sep 2022 - May 2026</span><br>BSE Mechanical and Aerospce Engineering, Minor in Computer Science</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------services---------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-fade fa-2xl"></i>
+                    <h2>Web Development</h2>
+                    <p>"Aspiring web developer with a knack for crafting visually appealing and functional websites.
+                         Proficient in HTML, CSS, and JavaScript, I bring a dynamic skill set ready to contribute to 
+                         your team and tackle real-world projects."</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database fa-bounce fa-2xl"></i> 
+                    <h2>Database Management</h2>
+                    <p>Specializing in MongoDB for efficient and scalable database management. I ensure seamless 
+                        integration with web applications, providing reliable data storage and retrieval solutions 
+                        tailored to your project requirements.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal fa-beat fa-2xl"></i>
+                    <h2>Software development</h2>
+                    <p>Utilizing Python and Java to develop custom software solutions, from small-scale applications
+                        to enterprise-level systems. With a focus on clean, maintainable code, I bring innovation to
+                         your projects and address complex programming challenges with precision.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------portfolio------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="grid1">
+                <div class="work">
+                    <img id="quiz" src="./images/work-1.png" alt="phone">
+                    <div class="layer">
+                        <h3>GUI Quizzler App</h3>
+                        <p>Unleash the fun with a True or False game that captivates! Developed using Python and 
+                            Tkinter, this interactive quiz features diverse questions from an API, an intuitive 
+                            interface with instant feedback, and a built-in score tracking system, promising a 
+                            thrilling and rewarding gaming experience upon completion."</p>
+                        <a href=" https://rb.gy/8b6mh"><i class="fa-solid fa-external-link-alt fa-beat-fade fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="snake" src="https://cdn.wallpapersafari.com/34/39/6uXp8i.jpg" style="height: 458px;" alt="Snake Game Wallpaper">
+                    <div class="layer">
+                        <h3>Snake Game</h3>
+                        <p>A Python-based Snake game using the Turtle module, featuring player-controlled snake 
+                            movement, food consumption for points, collision avoidance, and high score tracking.</p>
+                        <a href="https://rb.gy/zgllp"><i class="fa-solid fa-external-link-alt fa-beat-fade fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="pong" src="./images/pong.jpg" style="height: 458px; " alt="ping pong">
+                    <div class="layer">
+                        <h3>Ping Pong Game</h3>
+                        <p>A Python-based recreation of the classic arcade game Pong with paddle controls, 
+                            ball movement, scoring mechanism, and game over conditions - all meticulously designed 
+                            for an immersive two-player gameplay experience</p>
+                        <a href=" https://rb.gy/l3fvn"><i class="fa-solid fa-external-link-alt fa-beat-fade fa-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------------------grid below-------------------------------->
+            <div class="grid2">
+                <div id="pass" class="work">
+                    <img id="password" src="https://image.cnbcfm.com/api/v1/image/107169112-1671560276011-gettyimages-1366554092-18dee_3097.jpeg?
+                            v=1695824295&amp;w=929&amp;h=523&amp;vtcrop=y" jsaction="VQAsE" 
+                            style="height: 458px; margin: 0px; width: 100%;" 
+                            alt="Benefits, risks of using a password manager to protect online identity">
+                    <div class="layer">
+                        <h3>Password Manager App</h3>
+                        <p>A secure Password Manager application with Python and the Tkinter library. 
+                            Efficiently store and manage passwords for multiple websites and services through 
+                            labeled entry fields for website, email/username, and password. This application 
+                            provides essential functionalities such as password saving, retrieval, and an 
+                            integrated password generator for enhanced data security.</p>
+                        <a href="https://rb.gy/6qbbm"><i class="fa-solid fa-external-link-alt fa-beat-fade fa-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------------------------------------------->
+
+            <a class="btn" href="https://github.com/Ahmedgaigo">See more projects</a>
+        </div>
+    </div>
+
+
+    <!--------------------------------------Contact------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">My Contact</h1>
+                    <div class="email">
+                        <p><i class="fa-solid fa-paper-plane fa-xl"></i> am9046@princeton.edu</p>
+                    </div>
+                    <div class="phone">
+                        <p><i class="fa-solid fa-shake fa-phone fa-xl"></i> +16097858775</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/Ahmedgaigo"><i id="github" class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/ahmetgaigo"><i id="lin" class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a href="https://instagram.com/ahmetgaigo?igshid=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr"><i id="insta" class="fa-brands fa-instagram fa-xl"></i></a>
+                    </div>
+                    <a class="btn btn2" download href="./images/resume 9.0.pdf">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="6" placeholder="Message"></textarea>
+                        <button style="background: rosybrown;" class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!---------------------------------------------------------------------------------------------->
+
+
+    <footer>
+        <div class="foot">
+            <img id="im" src="./images/escr.png" alt="eat sleep code repeat">
+            <p id="cr">© 2023 Ahmed with ❤️️</p>
+        </div>
+    </footer>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+    
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <!---------------------------------------------------------------------------------------------->
+</body>
+</html>
+
